@@ -1,0 +1,19 @@
+<div id="header"><h3 class="titleCard" id="top">Person Name</h3></div>
+<!-- Button to open page nav menu. -->
+<h1><button (click)="toggleDisplayDiv()">  &#8801;  </button></h1>
+<!-- Page nav menu. Initially closed on site load, stays open between pages. -->
+<div [hidden]="isShowDiv" id="topmenu">
+    <nav>
+        <div class="col-xs-2">
+        <ul>
+        <li><a class="button col-xs-8" routerLink="/home">Homepage</a></li>
+        <li><a class="button col-xs-4" routerLink="/about">About Person</a></li>
+        <li><a class="button col-xs-8" routerLink="/contact">Contact</a></li>
+        <li><a class="button col-xs-8" routerLink="/donate">Donations</a></li>
+        <li><a class="button col-xs-8" routerLink="/events">Events</a></li>
+        <li><a class="button col-xs-8" routerLink="/issues">Issues</a></li> 
+        </ul>
+        </div>
+        <hr>
+    </nav>
+    </div>

@@ -1,0 +1,13 @@
+h2 {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 1.5px 1.5px 1.5px brown;
+}
+
+h2:hover {
+    color: blue;
+    text-shadow: gray;
+    font-size: 30px;
+    transform: translateY(-10px);
+    transition: all 1s ease-in-out;
+}

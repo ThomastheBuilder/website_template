@@ -1,0 +1,35 @@
+#mr {
+    position: relative;
+    right: 30px;
+}
+
+#ms {
+    position: relative;
+    right: 30px;
+}
+
+#mrs {
+    position: relative;
+    right: -30px;
+    top: -40px;
+}
+
+#dr {
+    position: relative;
+    right: -30px;
+    top: -40px;
+}
+
+#mrlbl {
+    position: relative;
+    right: 30px;
+}
+
+#mslbl {
+    position: relative;
+    right: 30px;
+}
+
+input {
+    cursor: pointer;
+}
