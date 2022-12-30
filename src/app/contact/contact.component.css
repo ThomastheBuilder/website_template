@@ -1,35 +1,81 @@
+/* General input formations. */
+input {
+    margin-top: 5px;
+}
+
+/* General input formations on hovering cursor. */
+input:hover {
+    background-color: grey;
+    scale: 1.04;
+}  
+
+/* Mr. Button */
 #mr {
     position: relative;
     right: 30px;
 }
 
+/* Ms. Button */
 #ms {
     position: relative;
     right: 30px;
 }
 
+/* Mrs. Button */
 #mrs {
     position: relative;
     right: -30px;
-    top: -40px;
+    top: -43px;
 }
 
+/* Doctor button */
 #dr {
     position: relative;
     right: -30px;
-    top: -40px;
+    top: -43px;
 }
 
+/* Mr. Label */
 #mrlbl {
     position: relative;
     right: 30px;
 }
 
+/* Ms. Label */
 #mslbl {
     position: relative;
     right: 30px;
 }
 
+/* Mrs. Label */
+#mrslbl {
+    position: relative;
+    right: -30px;
+    top: -43px;
+}
+
+/* Doctor Label */
+#drlbl {
+    position: relative;
+    right: -30px;
+    top: -43px;
+}
+
+/* Changes cursor to pointing hand, when hovering over the text input fields and radio buttons. */
 input {
     cursor: pointer;
+}
+
+/* The Submission button. */
+#submit {
+    margin: 10px;
+    border: double grey;
+    border-radius: 10px;
+}
+
+/* Submission button hover change. */
+#submit:hover {
+    border: double rgba(169, 169, 169, 0.336);
+    scale: 1.3;
+    font-style: bold;
 }

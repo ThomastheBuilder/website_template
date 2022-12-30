@@ -6,19 +6,27 @@ border-bottom: double 4px rgba(255, 174, 52, 0.678);
 color: white;
 font-style: normal;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 80px;
+font-size: 60px;
 width: 50%;
+height: auto;
 padding: 10px;
-padding-top: 40px;
-padding-bottom: 40px;
+padding-top: 60px;
+padding-bottom: 30px;
 text-align: center;
 margin: 0 auto; 
 width: 100%;
 text-shadow: 3px 3px 3px rgba(169, 169, 169, 0.486);
 transition: all 1s ease-in-out;
+position: fixed;
+top: -10px;
+z-index: 1;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+
 }
 
-/* Top of the page, when you hold the mouse over it. Well, that's what it's supposed to do but this bit of code isn't listening... wonder why??? */
+/* Top of the page, when you hold the mouse over it.*/
 h3.titleCard:hover {
     color: blue;
     background-color: rgb(240, 167, 57);
@@ -27,36 +35,21 @@ h3.titleCard:hover {
     text-shadow: 3px 3px 3px black;
 }
 
-/* Controls the menu bar that holds the page links.*/
-#topmenu {
-    border: 4px solid darkred;
-    fill: antiquewhite;
-    fill-opacity: 100%;
-    padding: 5px;
-    z-index: 1;
-    position: fixed;
-    transform: translateY(-100px);
-    transition: all 1s ease-in-out;
+/* Still individual items on the menu? Idk, it wasn't my idea to put the a there but it's effective. */
+a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    border: solid 2px lightcoral;
+    border-radius: 1px;
+    color: yellow;
+    background-color: rgba(169, 169, 169, 0.486);
+    opacity: 95%;
 }
 
-nav {
-    background: blanchedalmond;
-    padding: 00px;
-    padding-left: 4px;
-    padding-right: 4px;
-    width: 100%;
-    fill: antiquewhite 100%;
-    margin: 0 auto;
-}
-
-ul {
-    padding: 10%;
-    border: 10px;
-    list-style: none;
-}
-
-li :hover {
-    color: red
+a:hover {
+    background-color: darkgray;
 }
 
 #top :hover {
@@ -71,4 +64,30 @@ button {
 
 button :hover {
     background-color: bisque;
+}
+
+/* Holds and places the menu buttons in the correct position. */
+.wrapper {
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 16.6667% 16.6667% 16.6667% 16.6667% 16.6667% 16.6667%;
+    z-index: 4;
+    top: 0;
+}
+
+/* For mobile devices with more narrow screens. */
+@media screen and (max-width: 816px) {
+    .wrapper {
+        grid-template-columns: 25% 25% 25% 25%;
+        align-self: center;
+    }
+    
+    a {word-wrap: break-word;
+        word-break: break-all;
+        padding: 0;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        max-height: 20px;
+    }
 }
