@@ -79,3 +79,17 @@ input {
     scale: 1.3;
     font-style: bold;
 }
+
+/* Holds the social media icons for links. */
+#socialholder {
+    align-self: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+/* Icon class. */
+.socialicon {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}

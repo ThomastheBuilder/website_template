@@ -14,21 +14,26 @@
         <label for="dr" id="drlbl">Dr.</label><br>
 <!-- Text fill out forms below. -->
         <label for="fname">First Name: </label>
-        <input type="text" id="fname" name="fname" maxlength="12">
+        <input type="text" id="fname" name="fname" minlength="3" maxlength="16">
         <br>
         <label for="lname">Last Name: </label>
-        <input type="text" id="lname" name="lname" maxlength="16" />
+        <input type="text" id="lname" name="lname" minlength="3" maxlength="16" />
         <br>
         <label for="number">Phone Number: </label>
-        <input type="number" id="number" name="number" maxlength="11" />
+        <input type="number" id="number" name="number" minlength="11" maxlength="11" />
         <br>
         <label for="email">Email Address: </label>
         <input type="email" id="email" name="email" /><br>
-        <input type="submit" value="Submit" id="submit" formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+        <input type="submit" value="Submit" id="submit" method="post" formaction="https://jkorpela.fi/cgi-bin/echo.cgi">
     </form> 
 </div>
 <!-- Social Media Icon Links to go here. -->
 <div class="main">
     <h3>And feel free to follow Person on social media, via the links below!</h3>
-    <img url="/assets/images/fbicon.png" alt="Facebook Icon for Link" />
+    <div id="socialholder">
+    <a href="https://www.facebook.com/profile.php?id=100012374860074"><img src="../assets/images/fbicon.png" alt="Facebook Icon for Link" class="socialicon" id="fbicon"/></a>
+    <a href="https://twitter.com/i/topics/1291673117010534401"><img src="../assets/images/twicon.png" alt="Twitter Icon for Link" class="socialicon" id="twicon"/></a>
+    <a href="https://www.linkedin.com/in/tom-morris-477641212/"><img src="../assets/images/liicon.png" alt="LinkedIn Icon for Link" class="socialicon" id="liicon"/></a>
+    <a href="https://www.instagram.com/explore/tags/funny/"><img src="../assets/images/inicon.png" alt="Instagram Icon for Link" class="socialicon" id="inicon"/></a>
+</div>
 </div>
