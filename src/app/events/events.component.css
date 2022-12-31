@@ -41,8 +41,16 @@ p {
     top: 49px;
     margin: 10px;
     content: auto;
-    border: double burlywood;
-    background-color: antiquewhite;
+    border: double black;
+    background-color: white;
+}
+
+/* Gets uglier the tighter the width, so this removes it entirely on mobile. */
+@media screen and (max-width: 630px) {
+    #identifieragenda {
+        visibility: hidden;
+        display: none;
+    }
 }
 
 /* The actual Google calendar Element. */

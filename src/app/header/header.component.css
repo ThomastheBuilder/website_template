@@ -11,14 +11,14 @@ width: 50%;
 height: auto;
 padding: 10px;
 padding-top: 60px;
-padding-bottom: 30px;
+padding-bottom: 50px;
 text-align: center;
 margin: 0 auto; 
 width: 100%;
 text-shadow: 3px 3px 3px rgba(169, 169, 169, 0.486);
 transition: all 1s ease-in-out;
 position: fixed;
-top: -20px;
+top: -70px;
 z-index: 1;
 display: flex;
 flex-direction: column;
@@ -30,7 +30,7 @@ flex-wrap: nowrap;
 h3.titleCard:hover {
     color: blue;
     background-color: white;
-    border-color: black;
+    border-color: blue;
     transition: all 1s ease-in-out;
     text-shadow: 3px 3px 3px black;
 }
@@ -49,13 +49,16 @@ a {
 }
 
 a:hover {
-    background-color: darkgray;
+    border-color: blue;
+    color: blue;
+    background-color: white;
 }
 
 #top :hover {
     color: blue;
     border-color: blue;
     background-color: white;
+    transition: all 2s;
 }
 
 button {
@@ -73,16 +76,17 @@ button :hover {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     z-index: 4;
-    top: 0;
+    top: 56px;
 }
 
 /* For mobile devices with more narrow screens. */
 @media screen and (max-width: 816px) {
     .wrapper {
-        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
         align-self: center;
+        top: 150px;
     }
-    
+
     a {word-wrap: break-word;
         word-break: break-all;
         padding: 0;
