@@ -22,6 +22,7 @@ body {
     margin-top: 160px;
 }
 
+/* Body scale with mobile. */
 @media screen and (max-width: 816px) {
     body {
         margin-right: 0;
@@ -42,6 +43,7 @@ div.main {
     margin: auto;
 }
 
+/* Site reaction when users hover over/interact with main body blocks. */
 div.main:hover {
     border-color: blue;
     color: blue;
@@ -54,6 +56,7 @@ div.main:hover {
     padding: 10px;
 }
 
+/* Does the page have buttons anymore? */
 button {
     background-color: antiquewhite;
     padding: 20px;
@@ -65,15 +68,18 @@ button {
     transform: translateY(-197px);
 }
 
+/* When users hover the title. */
 h1 :hover {
     color: blue;
     size-adjust: 1.3;
 }
 
+/* Secondary page label styling. */
 h2 {
     font-size: 25px;
 }
 
+/* Standard image styling. */
 image {
     display: block;
     margin: 0px;

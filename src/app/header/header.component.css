@@ -55,6 +55,7 @@ a:hover {
     background-color: white;
 }
 
+/* Master Banner when hovering. */
 #top :hover {
     color: blue;
     border-color: blue;
@@ -74,12 +75,14 @@ a:hover {
 
 /* For mobile devices with more narrow screens. */
 @media screen and (max-width: 816px) {
+    /* Changes link button alignment and layout to scale with mobile. */
     .wrapper {
         grid-template-columns: 20% 20% 20% 20% 20%;
         align-self: center;
         top: 150px;
     }
 
+    /* Changes the buttons themselves, making them smaller to fit mobile screens. */
     a {word-wrap: break-word;
         word-break: break-all;
         padding: 0;

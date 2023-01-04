@@ -31,6 +31,7 @@ p {
     padding: 0px;
 }
 
+/* Determines page height/distance of Footer from Content. */
 #page-container {
     position: relative;
     min-height: 65vh;
