@@ -1,5 +1,15 @@
+/* Alignment and size of image. */
 img {
     align-content: center;
     max-width: 400px;
     max-height: 100%;
+}
+
+/* Alignment of image on mobile. */
+@media screen and (max-width: 450px) {
+    img {
+        align-content: center;
+        max-width: 200px;
+        max-height: 100%;        
+    }
 }
