@@ -10,6 +10,7 @@
     margin-top: 0px;
     padding: 25px;
     height: 2.5rem;
+    border-top: 1px white solid;
 }
 
 /* Keeps the 'back to top' text on the right side of the page and in line with the center text, vertically. */

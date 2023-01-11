@@ -6,10 +6,10 @@ main {
 
 /* Styling for overarching body of web page content. */
 body {
-    /* background-image: url(americanflag.jpg); */
-    background-color: rgb(179, 180, 182);
+    /* background-image: url(../assets/images/americanflag.jpg); */
+    background: linear-gradient(lightgrey 25%, lightblue 100%);
+    background-blend-mode: lighten;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
@@ -27,6 +27,7 @@ body {
     body {
         margin-right: 0;
         margin-top: 230px;
+        overflow-x: hidden;        
     }
 }
 
