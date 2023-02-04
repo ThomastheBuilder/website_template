@@ -7,7 +7,7 @@
 <div class="main">
     <!-- Form Group Header. -->
     <h1>Contact Form</h1>
-    <form>
+    <form #gfg = "ngForm">
         <label>Suffix</label><br>
 <!-- Radio buttons for the suffix options below. -->
         <input type="radio" id="mr" name="suffix" value="mr" />
@@ -20,18 +20,20 @@
         <label for="dr" id="drlbl">Dr.</label><br>
 <!-- Text fill out forms below. -->
         <label for="fname">First Name: </label>
-        <input type="text" id="fname" name="fname" minlength="3" maxlength="16">
+        <input type="text" id="fname" name="fname" minlength="3" maxlength="16" ngModel>
         <br>
         <label for="lname">Last Name: </label>
-        <input type="text" id="lname" name="lname" minlength="3" maxlength="16" />
+        <input type="text" id="lname" name="lname" minlength="3" maxlength="16" ngModel/>
         <br>
         <label for="number">Phone Number: </label>
-        <input type="number" id="number" name="number" minlength="11" maxlength="11" />
+        <input type="number" id="number" name="number" minlength="11" maxlength="11" ngModel/>
         <br>
         <label for="email">Email Address: </label>
-        <input type="email" id="email" name="email" /><br>
-    <input type="submit" value="Submit" id="submit" method="post" formaction="">
+        <input type="email" id="email" name="email" ngModel/><br>
+    <!-- Commented out for now. <button type="submit" value="Submit" id="submit">Submit</button> -->
     </form> 
+    <br>
+    {{ gfg.value | json }}
 </div>
 <!-- Social Media Icon Links to go here. -->
 <div class="main">
@@ -39,12 +41,12 @@
     <h3>And feel free to follow Person on social media, via the links below!</h3>
     <div id="socialholder">
     <!-- Facebook Icon/Link. -->
-        <a href="https://www.facebook.com/profile.php?id=100012374860074" target="_blank"><img src="../assets/images/fbicon.png" alt="Facebook Icon for Link" class="socialicon" id="fbicon"/></a>
+        <a href="https://www.facebook.com/profile.php?id=100012374860074" target="_blank" rel="noopener"><img src="../assets/images/fbicon.png" alt="Facebook Icon for Link" class="socialicon" id="fbicon"/></a>
     <!-- Twitter Icon/Link. -->
-        <a href="https://twitter.com/i/topics/1291673117010534401" target="_blank"><img src="../assets/images/twicon.png" alt="Twitter Icon for Link" class="socialicon" id="twicon"/></a>
+        <a href="https://twitter.com/i/topics/1291673117010534401" target="_blank" rel="noopener"><img src="../assets/images/twicon.png" alt="Twitter Icon for Link" class="socialicon" id="twicon"/></a>
     <!-- LinkedIn Icon/Link. -->
-        <a href="https://www.linkedin.com/in/tom-morris-477641212/" target="_blank"><img src="../assets/images/liicon.png" alt="LinkedIn Icon for Link" class="socialicon" id="liicon"/></a>
+        <a href="https://www.linkedin.com/in/tom-morris-477641212/" target="_blank" rel="noopener"><img src="../assets/images/liicon.png" alt="LinkedIn Icon for Link" class="socialicon" id="liicon"/></a>
     <!-- Instagram Icon/Link -->
-        <a href="https://www.instagram.com/explore/tags/funny/" target="_blank"><img src="../assets/images/inicon.png" alt="Instagram Icon for Link" class="socialicon" id="inicon"/></a>
+        <a href="https://www.instagram.com/explore/tags/funny/" target="_blank" rel="noopener"><img src="../assets/images/inicon.png" alt="Instagram Icon for Link" class="socialicon" id="inicon"/></a>
 </div>
 </div>

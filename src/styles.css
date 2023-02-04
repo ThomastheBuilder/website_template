@@ -27,6 +27,7 @@ body {
     body {
         margin-right: 0;
         margin-top: 230px;
+        /* Supposed to remove that annoying horizontal scrolling on mobile. Doesn't seem to do the trick yet. */
         overflow-x: hidden;        
     }
 }
